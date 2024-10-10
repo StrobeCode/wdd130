@@ -1,0 +1,51 @@
+body {
+    background-color: steelblue;
+}
+
+header {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+header:hover h1 {
+   color: black;
+}
+ .quote-1 {
+    text-align: center;
+    color: white;
+ }
+
+ .copyright {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .list {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+ }
+
+ .list ol li {
+    margin-bottom: 10px;
+ }
+
+ .img img {
+    width: 50%;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+ }
+
+ .quote-2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+ }
+
+ footer {
+    text-align: center;
+ }
