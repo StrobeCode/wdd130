@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto; /* Centers the content horizontally */
@@ -7,18 +11,28 @@ body {
     background-color: wheat;
     padding: 0;
     margin: 0;
+    font-size: 22px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: rgba(20, 30, 13, 0.7); /* Adds transparency */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 footer {
-    background-color: #3C3F58;
+    background-color: rgba(20, 30, 13, 0.7);
     font-size: 1.2em; /* Larger footer text */
+    padding: 25px 50px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin: 0;
 }
 
 nav a {
+    padding: 35px;
     text-align: center;
     color: #fcfbfb; /* Light color for good contrast */
     text-decoration: none; /* Removes underline */
@@ -42,6 +56,10 @@ main section {
     text-align: center; /* Centers the section content */
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #f0e6d2; /* Example background color */
@@ -50,6 +68,10 @@ main section {
 .book, .join {
     background-color: #d4a373;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -57,7 +79,9 @@ main section {
 }
 
 .msg {
-    background-color: #f0f0f5; /* Adds a background to the message */
+    padding: 35px;
+    background-color: #6f7364; /* Adds a background to the message */
+    line-height: 1.5em;
 }
 
 .msg h2 {
@@ -66,10 +90,12 @@ main section {
 
 .msg p {
     color: #5c5c5c;
+    padding-bottom: 15px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -85,6 +111,27 @@ footer a:hover {
     text-decoration: underline; /* Adds underline on hover */
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.home-title {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
 }
