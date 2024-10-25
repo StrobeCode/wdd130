@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: auto auto; /* Adjust row height automatically */
+  gap: 10px; /* Space between the grid items */
+  align-items: center; /* Align items vertically */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#tart {
+  grid-column: 1 / 3; /* Spans the first column */
+  grid-row: 1 / 1; /* Occupies the first row */
+  font-size: 95px; /* Adjust font size */
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+  margin-bottom: 150px;
+  letter-spacing: 15px;
+}
+
+#twocherry {
+  grid-column: 1 / 2; /* Spans the second column */
+  grid-row: 1 / 2; /* Occupies the first row */
+  width: 100%; /* Adjust image size */
+  height: auto;
+  justify-self: center; /* Centers the image horizontally in the grid cell */
+}
+
+.greybox {
+  grid-column: 2; /* Spans the first column */
+  grid-row: 1 / 3; /* Occupies the second row */
+  background-color: #ccc; /* Grey background */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#cherries {
+  grid-column: 2; /* Spans the second column */
+  grid-row: 2 / 3; /* Occupies the second row */
+  font-size: 45px; /* Adjust font size */
+  color: #b30000; /* Red color */
+  text-align: center;
+  margin-top: -200px;
+  letter-spacing: 10px;
+}
+
