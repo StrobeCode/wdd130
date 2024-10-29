@@ -1,0 +1,312 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  /* This is the parent of the activity 1 boxes. */
+
+}
+.red1 { 
+  width: 100%; 
+  height: 100px; 
+  background-color: red; 
+  grid-column: 1/3;
+
+} 
+.green1 {
+  width: 200px; 
+  height: 200px; 
+  background-color: green; 
+
+} 
+.yellow1 {
+  width: 200px; 
+  height: 200px; 
+  background-color: gold; 
+} 
+.blue1 {
+  width: 100%; 
+  height: 100px; 
+  background-color: blue; 
+  grid-column: 1/3;
+} 
+/* Activity 2 styles */ 
+.content2 {
+  /* Container that holds all squares */
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.red2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: red; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.green2 { 
+  width: 100px; 
+  height: 100px; 
+  background-color: green; 
+  position: absolute;
+  top: 50px; /* Adjust to stagger */
+  left: 50px;
+}
+
+.yellow2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: gold; 
+  position: absolute;
+  top: 100px; /* Adjust to stagger */
+  left: 100px;
+}
+
+.blue2 {
+  width: 100px; 
+  height: 100px; 
+  background-color: blue; 
+  position: absolute;
+  top: 150px; /* Adjust to stagger */
+  left: 150px;
+}
+
+/* Activity 3 styles */ 
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr; /* Add a 20px gap column in the middle */
+  grid-template-rows: auto;
+  width: 100%; /* Adjust the total width to include the gap */
+  gap: 0; /* No additional gaps */
+}
+
+.red3 {
+  grid-column: 1 / span 3; /* Span across all three columns */
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.green3 {
+  grid-column: 1 / 2; /* First column */
+  width: 100%;
+  height: 100px;
+  background-color: green;
+}
+
+.yellow3 {
+  grid-column: 3 / 4; /* Third column, after the gap */
+  width: 100%;
+  height: 100px;
+  background-color: gold;
+}
+
+.blue3 {
+  grid-column: 1 / span 3; /* Span across all three columns */
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+
+
+/* Activity 4 styles */ 
+.content4 {
+  /* This is the container for Activity 4 */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr 1fr; /* Three rows */
+  width: 100%;
+  height: 100%; /* Adjusted height to fit three stacked boxes */
+}
+
+.red4 {
+  grid-column: 1 / 2; /* Occupies the full left column */
+  grid-row: 1 / 4; /* Spans all three rows on the left */
+  background-color: red;
+}
+
+.green4 {
+  grid-column: 2 / 3; /* Right column */
+  grid-row: 1 / 2; /* First row on the right */
+  background-color: green;
+}
+
+.yellow4 {
+  grid-column: 2 / 3; /* Right column */
+  grid-row: 2 / 3; /* Second row on the right */
+  background-color: gold;
+}
+
+.blue4 {
+  grid-column: 2 / 3; /* Right column */
+  grid-row: 3 / 4; /* Third row on the right */
+  background-color: blue;
+}
+
+/* Activity 5 styles */ 
+/* General styling for containers */
+.content5 {
+  height: 400px;
+  position: relative; /* Ensure elements are contained within this section */
+}
+
+.red5 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.green5 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  float: left;
+}
+
+.yellow5 {
+  width: 100%;
+  background-color: yellow;
+  float: left;
+  margin-right: 10px; /* Space between yellow box and text */
+  padding: 10px; /* Add padding for the inner text content */
+}
+
+.blue5 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  clear: both; /* Ensures blue box stays below floated elements */
+}
+
+.text {
+  padding: 10px; /* Space around the text */
+}
+
+
+/* Activity 6 styles */ 
+.content6 {
+  position: relative; /* Establishes a positioning context for absolute positioning */
+  width: 300px; /* Adjust as needed based on your container */
+  height: 300px;
+}
+
+.red6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.blue6 {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+.yellow6 {
+  width: 100px;
+  height: 200px;
+  background-color: gold;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  z-index: 3;
+}
+
+.green6 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  z-index: 4;
+}
+
+
+
+/* Do not make any changes below here */
+.activity {
+  width: 70%; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  border: 1px solid black; 
+  padding: 10px; 
+  clear:both; 
+  overflow: auto;
+} 
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: .5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hint input[type=checkbox]:checked ~ div {
+  display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+  top: -3px;
+}
+.hint i:before, .hint i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
+}
