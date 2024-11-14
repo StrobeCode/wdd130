@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&family=Playfair+Display:wght@400&display=swap');
+
+
+body {
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+main {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.bridge {
+    width: 100%;
+    /* border-top-left-radius: 5%;
+    border-top-right-radius: 5%; */
+}
+
+h1 {
+    font-family: 'Merriweather', Georgia, serif; /* Serif font for headings */
+    font-weight: bold;
+    color: black;
+
+}
+
+.txt {
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+.weeks {
+    color: #5072A7 !important;
+    text-align: center;
+    margin-bottom: -1.1rem;
+    font-weight: 600;
+}
+
+.title {
+    text-align: center;
+}
+
+.txt {
+    font-size: 1.2rem;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.5rem;
+    padding: .5rem;
+
+}
+  
+.grid-footer {
+    font-family: 'Playfair Display', Georgia, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #5072A7;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.time {
+    grid-column: 1/2;
+    line-height: .7;
+    padding: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.views {
+    grid-column: 2/3;
+    line-height: .7;
+    padding: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comments {
+    grid-column: 3/4;
+    line-height: .7;
+    padding: 30px;
+}
+
+.superscript {
+    font-size: 0.6em; /* Make the "m" smaller */
+    vertical-align: super; /* Raise the "m" */
+}
+
+.sub {
+    font-size: 0.8rem;
+    margin-top: -50px;
+    line-height: 1.2;
+}
+
+@media (min-width: 451px) {
+    body {
+        width: 100%;
+    }
+
+}
